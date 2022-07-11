@@ -3,6 +3,7 @@ package src.work;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamMain1 {
@@ -50,6 +51,8 @@ public class StreamMain1 {
 
         Stream<Integer> stream = list1.stream();
 
-        
+        List<Integer> newList = stream.filter(i->i%2==0).collect(Collectors.toList());
+
+        System.out.println(newList);
     }
 }
