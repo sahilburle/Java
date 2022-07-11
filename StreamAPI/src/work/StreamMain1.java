@@ -49,10 +49,16 @@ public class StreamMain1 {
         using Stream API
          */
 
-        Stream<Integer> stream = list1.stream();
+//        Stream<Integer> stream = list1.stream();
+//
+//        List<Integer> newList = stream.filter(i->i%2==0).collect(Collectors.toList());
+//
+//        System.out.println(newList);
 
-        List<Integer> newList = stream.filter(i->i%2==0).collect(Collectors.toList());
-
+        List<Integer> newList = list1.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
         System.out.println(newList);
+
+        List<Integer> listNew = list1.stream().filter(i -> i > 50).collect(Collectors.toList());
+        System.out.println(listNew);
     }
 }
