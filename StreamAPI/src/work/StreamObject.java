@@ -26,5 +26,13 @@ public class StreamObject {
 
         //4
         IntStream stream = Arrays.stream(new int[]{2,4,8,6,78,95,12});
+
+        stream.forEach(e -> {
+            System.out.print(" " + e);
+        });
+
+        //5. List, Set
+        
+
     }
 }
