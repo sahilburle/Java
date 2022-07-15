@@ -1,6 +1,8 @@
 package src.work;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -32,7 +34,18 @@ public class StreamObject {
         });
 
         //5. List, Set
-        
+        List <Integer> list2 = new ArrayList<>();
+
+        list2.add(10);
+        list2.add(11);
+        list2.add(78);
+        list2.add(63);
+
+        Stream<Integer> stream2 = list2.stream();
+        stream2.forEach(e-> {
+            System.out.println(e);
+            
+        });
 
     }
 }
