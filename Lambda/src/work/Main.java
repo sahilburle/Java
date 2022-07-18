@@ -11,12 +11,20 @@ public class Main {
         MyInter i=new MyInter() {
             @Override
             public void sayHello() {
-
+                System.out.println("this is 1st anonymous class");
             }
         };
 
         i.sayHello();
 
-        
+        MyInter i2 = new MyInter() {
+            @Override
+            public void sayHello() {
+                System.out.println("this is 2nd anonymous class");
+            }
+        };
+
+        i2.sayHello();
+
     }
 }
